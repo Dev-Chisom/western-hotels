@@ -7,6 +7,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
+    overflow-y: hidden;
     
 }
 body::-webkit-scrollbar-track {
@@ -47,7 +48,7 @@ button:hover{
 }
 a{
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 .pt{
     padding: 1rem 1rem;
@@ -71,6 +72,8 @@ li{
     background: #000;
     color: #fff;
 }
+.logo{ color: #000;}
+
 .logo span{
     font-size: 1.5rem;
     font-weight: 500;
@@ -80,10 +83,11 @@ li{
 }
 nav{
     position: fixed;
-    background: rgba(0,0,0,0.2);;
+    background: #f4f4f4;;
     padding: 5px 40px;
     width: 100%;
     z-index: 3;
+  
 }
 nav ul{
   list-style: none;
@@ -95,8 +99,11 @@ nav ul{
 nav ul li{
   padding: 15px 0;
   cursor: pointer;
+  color: #000;
 
 }
+
+nav ul li.items a{color: #000;}
 
 nav ul li.items{
   position: relative;
@@ -139,12 +146,14 @@ nav ul li:hover a{
 }
 nav ul li i{
   font-size: 23px;
+  color: #000;
 }
 nav ul li.btn{
   display: none;
 }
 nav ul li.btn.hide i:before{
   content: '\f00d';
+  color: #000;
 } 
 .showcase{
     position: relative;
@@ -701,7 +710,9 @@ textarea{
 
 
 @media screen and (max-width: 768px) {
-   
+    nav ul li{
+        padding-top: .4rem;
+      }
     .btn{
         padding: 5px 10px;
         font-size: 15px;
